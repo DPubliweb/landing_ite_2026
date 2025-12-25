@@ -66,7 +66,7 @@ export default function HeroSection() {
             <img
               src="/1s5nj5p-design-sans-titre-15_10l80c20940c205s000028.png"
               alt="Isolation thermique extérieure"
-              className="h-[70px] md:h-[180px] w-auto object-contain rounded-lg shadow-lg" />
+              className="h-[90px] md:h-[180px] w-auto object-contain rounded-lg" />
 
           </div>
         </div>
