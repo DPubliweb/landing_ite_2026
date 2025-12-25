@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import HeroSection from "../components/landing/HeroSection";
 import ComfortSection from "../components/landing/ComfortSection";
 import BenefitsGrid from "../components/landing/BenefitsGrid";
-import AdvantagesSection from "../components/landing/AdvantagesSection";
+import AdvantagesSection from "../components/landing/AdvantagesSection.jsx";
 import FinalCTA from "../components/landing/FinalCTA";
 import FAQ from "../components/landing/FAQ";
 import CTAButton from "../components/landing/CTAButton";
