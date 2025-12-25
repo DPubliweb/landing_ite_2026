@@ -7,6 +7,20 @@ import FinalCTA from "../components/landing/FinalCTA";
 import FAQ from "../components/landing/FAQ";
 import CTAButton from "../components/landing/CTAButton";
 
+const isValidComponent = (C) =>
+  typeof C === "function" || (typeof C === "object" && C && "$$typeof" in C);
+
+console.log("CHECK COMPONENTS", {
+  HeroSection: isValidComponent(HeroSection),
+  ComfortSection: isValidComponent(ComfortSection),
+  BenefitsGrid: isValidComponent(BenefitsGrid),
+  AdvantagesSection: isValidComponent(AdvantagesSection),
+  FinalCTA: isValidComponent(FinalCTA),
+  FAQ: isValidComponent(FAQ),
+  CTAButton: isValidComponent(CTAButton),
+});
+
+
 export default function Home() {
   const [showStickyButton, setShowStickyButton] = useState(false);
   
