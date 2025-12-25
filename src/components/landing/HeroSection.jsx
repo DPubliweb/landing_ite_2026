@@ -64,7 +64,7 @@ export default function HeroSection() {
           </h1>
           <div className="flex-shrink-0">
             <img
-              src="https://images.unsplash.com/photo-1632821216742-9f6d6d4f1b9c?w=500&q=80"
+              src="/1s5nj5p-design-sans-titre-15_10l80c20940c205s000028.png"
               alt="Isolation thermique extérieure"
               className="h-[70px] md:h-[180px] w-auto object-contain rounded-lg shadow-lg" />
 
