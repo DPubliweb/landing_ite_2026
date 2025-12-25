@@ -30,7 +30,7 @@ export default function BenefitsGrid() {
     },
     {
       icon: BadgeDollarSign,
-      title: "Aides de l'État 2025",
+      title: "Aides de l'État 2026",
       description: "Bénéficiez des aides régionales et nationales : jusqu'à 12 000€."
     }
   ];
