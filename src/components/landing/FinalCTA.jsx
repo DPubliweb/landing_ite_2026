@@ -63,7 +63,7 @@ export default function FinalCTA() {
         <div className="flex items-center justify-center gap-3 text-white">
           <Calendar className="w-5 h-5" />
           <p className="text-lg font-semibold">
-            Profitez des aides <span style={{ color: '#81C784' }}>2025</span> - jusqu'à 12 000€
+            Profitez des aides <span style={{ color: '#81C784' }}>2026</span> - jusqu'à 12 000€
           </p>
         </div>
 

@@ -48,10 +48,10 @@ export default function ComfortSection() {
 
             <div>
               <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3" style={{ color: '#1B5E20' }}>
-                Aides de l'État 2025
+                Aides de l'État 2026
               </h3>
               <p className="text-base md:text-lg leading-relaxed text-gray-700">
-                Profitez des <strong>aides 2025</strong> : MaPrimeRénov' (63 000€), 
+                Profitez des <strong>aides 2026</strong> : MaPrimeRénov' (63 000€), 
                 CITE (30% de crédit d'impôt), Éco-PTZ (30 000€). 
                 <strong style={{ color: '#2E7D32' }}> Jusqu'à 12 000 euros</strong> financés par les aides de l'État.
               </p>

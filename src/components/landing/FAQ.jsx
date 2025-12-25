@@ -10,8 +10,8 @@ export default function FAQ() {
       answer: "L'ITE consiste à envelopper votre maison d'une couche isolante par l'extérieur. Cette technique élimine les ponts thermiques, améliore significativement l'efficacité énergétique et préserve votre espace intérieur contrairement à l'isolation par l'intérieur."
     },
     {
-      question: "Quelles sont les aides disponibles en 2025 ?",
-      answer: "En 2025, vous pouvez bénéficier de MaPrimeRénov' (jusqu'à 63 000€), du CITE - Crédit d'Impôt pour la Transition Énergétique (30% de déduction), de l'Éco-PTZ (jusqu'à 30 000€), et des primes CEE. Les aides peuvent atteindre jusqu'à 12 000€ selon votre éligibilité."
+      question: "Quelles sont les aides disponibles en 2026 ?",
+      answer: "En 2026, vous pouvez bénéficier de MaPrimeRénov' (jusqu'à 63 000€), du CITE - Crédit d'Impôt pour la Transition Énergétique (30% de déduction), de l'Éco-PTZ (jusqu'à 30 000€), et des primes CEE. Les aides peuvent atteindre jusqu'à 12 000€ selon votre éligibilité."
     },
     {
       question: "Quels sont les critères d'éligibilité ?",
@@ -43,7 +43,7 @@ export default function FAQ() {
           Questions fréquentes
         </h2>
         <p className="text-center text-lg text-gray-600 mb-12">
-          Tout ce que vous devez savoir sur l'ITE et les aides 2025
+          Tout ce que vous devez savoir sur l'ITE et les aides 6
         </p>
 
         {/* FAQ Items */}
