@@ -4,13 +4,22 @@ import { CheckCircle2, Loader2 } from "lucide-react";
 
 // ---- LOG LOCAL + QODDI ----
 const logLead = (leadData) => {
-  console.log("📨 LEAD ENVOYÉ :", leadData);
+  console.group("📨 NOUVEAU LEAD REÇU");
+  console.table(leadData);
+  console.log("🕒 Date :", new Date().toLocaleString());
+  console.groupEnd();
 
   fetch("/log-lead", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(leadData),
-  }).catch(() => {});
+    body: JSON.stringify({
+      type: "lead_form",
+      data: leadData,
+      received_at: new Date().toISOString()
+    }),
+  }).catch((err) => {
+    console.error("❌ Erreur log local :", err);
+  });
 };
 
 // ---- ENVOI AU SERVEUR (TON APP) ----
