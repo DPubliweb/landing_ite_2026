@@ -15,7 +15,8 @@ app.post("/log-lead", (req, res) => {
 // SERVE REACT BUILD
 app.use(express.static(path.join(__dirname, "build")));
 
-app.get("*", (req, res) => {
+// ⚠️ IMPORTANT : PAS DE "*"
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
