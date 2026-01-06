@@ -1,20 +1,25 @@
 const express = require("express");
 const path = require("path");
-const app = express();
 
+const app = express();
 app.use(express.json());
 
-// Logging API
+// LOG LEAD
 app.post("/log-lead", (req, res) => {
-  console.log("📩 LEAD SERVEUR :", req.body);
-  res.send("ok");
+  console.log("📩 NOUVEAU LEAD REÇU");
+  console.table(req.body);
+  console.log("🕒", new Date().toISOString());
+  res.status(200).json({ ok: true });
 });
 
-// Serve React build
+// SERVE REACT BUILD
 app.use(express.static(path.join(__dirname, "build")));
-app.get("*", (_, res) => {
+
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("🚀 Server running on " + PORT));
+app.listen(PORT, () => {
+  console.log("🚀 EXPRESS SERVER RUNNING ON PORT", PORT);
+});
