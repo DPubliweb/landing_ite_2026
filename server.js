@@ -7,10 +7,13 @@ app.use(express.json());
 // LOG LEAD
 app.post("/log-lead", (req, res) => {
   console.log("📩 NOUVEAU LEAD REÇU");
-  console.table(req.body);
   console.log("🕒", new Date().toISOString());
+  console.log("📦 DATA :", JSON.stringify(req.body, null, 2));
+  console.log("────────────────────────────────────────");
+
   res.status(200).json({ ok: true });
 });
+
 
 // SERVE REACT BUILD
 app.use(express.static(path.join(__dirname, "build")));
